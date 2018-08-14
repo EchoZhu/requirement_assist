@@ -1,0 +1,123 @@
+/* pages/my/my.wxss */
+
+page {
+  background: #ededed;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 180px;
+  background-color: #f95743;
+}
+
+.userinfo-avatar {
+  margin-top: 12rpx;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.userinfo-phone {
+  margin-top: 10px;
+  color: white;
+  font-size: 12px;
+}
+
+.requstNumberArea {
+  display: flex;
+  color: white;
+  margin-top: 16px;
+  height: 60px;
+  width: 100%;
+}
+
+.myRequsts {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  align-items: center;
+  flex: 1;
+  padding: 5px;
+}
+
+.myRequestNumber {
+  margin-top: 5px;
+}
+
+.approvedRequsts {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  align-items: center;
+  flex: 1;
+  padding: 5px;
+}
+
+.approvedRequestNumber {
+  margin-top: 5px;
+}
+
+.line {
+  height: 60px;
+  width: 1px;
+  background-color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.showCardArea {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.cardRow {
+  display: flex;
+  height: 70px;
+}
+
+.unaccepted {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  flex: 1;
+  margin: 5px;
+}
+
+.unassigned {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  flex: 1;
+  margin: 5px;
+}
+
+.numberAndPic {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #999c9e;
+}
+.cardTitle{
+  font-size: 14px;
+  margin-left: 5px;
+  margin-top: 3px
+}
+.cardImage {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  color: greenyellow
+}
+
+.changeAccount{
+  color: #999c9e;
+  margin-top: 20px;
+  margin-left: 16px;
+  margin-right: 16px;
+}

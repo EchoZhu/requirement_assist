@@ -1,0 +1,61 @@
+/* pages/regist/regist.wxss */
+
+page {
+  background-color: #f7f7f7;
+}
+
+.view_username_pwd {
+  margin-top: 30px;
+  background-color: white;
+  margin-left: 12px;
+  margin-right: 12px;
+  font-size: 40rpx;
+}
+
+.greyline {
+  background-color: #f7f7f7;
+  height: 2px;
+  width: 100%;
+}
+
+.input_phonenumber {
+  height: 50px;
+  margin-left: 10px;
+}
+
+.input_pwd {
+  height: 50px;
+  margin-left: 10px;
+}
+
+.input_confirmpwd {
+  height: 50px;
+  margin-left: 10px;
+}
+
+.view_confirm_code {
+  margin-top: 20px;
+  background-color: white;
+  margin-left: 12px;
+  margin-right: 12px;
+  display: flex;
+  flex-direction: row;
+}
+
+.input_confirmcode {
+  height: 50px;
+  margin-left: 10px;
+}
+
+.btn_getconfirmcode {
+  color: white;
+  background-color: #fa7050;
+}
+
+.btn_confirm {
+  margin-top: 30px;
+  color: #818181;
+  background-color: #ddd;
+  margin-left: 12px;
+  margin-right: 12px;
+}

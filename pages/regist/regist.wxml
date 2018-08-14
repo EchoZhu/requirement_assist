@@ -1,0 +1,14 @@
+<!--pages/regist/regist.wxml-->
+<view class='view_username_pwd'>
+  <input class='input_phonenumber' placeholder='{{str_phonenumber}}' bindinput='getInputPhoneNumber' type='number'></input>
+  <view class='greyline'></view>
+  <input class='input_pwd' placeholder='{{str_pwd}}' bindinput='getInputPWD' password='true'></input>
+  <view class='greyline'></view>
+  <input class='input_confirmpwd' placeholder='{{str_confirmpwd}}' bindinput='getConfirmPWD' password='true'></input>
+</view>
+<view class='view_confirm_code'>
+  <input class='input_confirmcode' placeholder='{{str_confirmcode}}' bindinput='getConfirmCode' type='number'></input>
+  <button class='btn_getconfirmcode' bindtap='getConfirmCodeAct'>{{str_getconfirmcode}}</button>
+</view>
+
+<button class='btn_confirm' bindtap='confirm'>{{str_confirm}}</button>

@@ -1,0 +1,126 @@
+/* pages/login/login.wxss */
+
+page {
+  /* 页面背景色 */
+  background: #fa7050;
+}
+
+.titlelogo {
+  height: 50px;
+  width: 100%;
+}
+
+.app_name {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.app_name_txt {
+  color: white;
+  font-size: 25px;
+}
+
+.hi_man {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.hi_man_img {
+  width: 150px;
+  height: 150px;
+  background-color: #fa7050;
+}
+
+/* 输入用户名区域 */
+
+.view_input_username {
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.usernamepic {
+  height: 20px;
+  width: 20px;
+  margin-left: 60px;
+}
+
+.input_username {
+  margin-left: 10px;
+  color: white;
+}
+
+/* 白线 */
+
+.whiteline {
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 6px;
+  height: 1px;
+  background-color: white;
+}
+
+/* 输入密码区域 */
+
+.view_input_pwd {
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.pwdpic {
+  height: 20px;
+  width: 20px;
+  margin-left: 60px;
+}
+
+.input_pwd {
+  margin-left: 10px;
+  color: white;
+}
+
+.view_btn_login {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.btn_login {
+  border-radius: 40rpx;
+  background: white;
+  margin-top: 30px;
+  margin-left: 60px;
+  margin-right: 60px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* 忘记密码 */
+.view_forgetpwd{
+  margin-top: 20px;
+  width: 100%;
+  height: 20px;
+  
+}
+.forgetpwd{
+  color: white;
+  font-size: 12px;
+  float: right;
+  margin-right: 60px;
+}
+.view_regist{
+  margin-top: 10px;
+  width: 100%;
+  height: 20px;
+}
+.regist{
+  color: white;
+  font-size: 12px;
+  float: right;
+  margin-right: 80px;
+}

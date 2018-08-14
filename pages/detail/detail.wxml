@@ -1,0 +1,56 @@
+<!--pages/detail/detail.wxml-->
+<!-- 需求名称 -->
+<view class='whiteArea'>
+  <view class='picArea'>
+    <text class='requestTitle'>{{requestTitle}}</text>
+  </view>
+</view>
+<text class='commonContentTitle'>原始需求ID:</text>
+<view class='commonContentArea'>
+  <text class='contentText'>{{requestID}}</text>
+</view>
+
+<text class='commonContentTitle'>责任人:</text>
+<view class='towDirectionContentArea'>
+  <text class='contentText'>需求提出人：{{requestPoster}}</text>
+  <text class='contentText'>所属部门：{{requestPosterOrgnization}}</text>
+</view>
+<view class='towDirectionContentArea'>
+  <text class='contentText'>需求负责人：{{requestOwner}}</text>
+</view>
+
+<text class='commonContentTitle'>状态:</text>
+<view class='commonContentArea'>
+  <text class='contentText'>{{requestStatus}}</text>
+</view>
+
+<text class='commonContentTitle'>需求提出人电话:</text>
+<view class='commonContentArea'>
+  <text class='contentText'>{{requestPosterPhone}}</text>
+</view>
+
+<text class='commonContentTitle'>需求分类:</text>
+<view class='commonContentArea'>
+  <text class='contentText'>{{requestCatalog}}</text>
+</view>
+
+<text class='commonContentTitle'>版本计划:</text>
+<view class='commonContentArea'>
+  <text class='contentText'>{{versionPlan}}</text>
+</view>
+
+<text class='commonContentTitle'>时间:</text>
+<view class='commonContentArea'>
+  <text class='contentText'>需求创建时间：{{createdTime}}</text>
+</view>
+<view class='commonContentArea'>
+  <text class='contentText'>需求结束时间：{{finshedTime}}</text>
+</view>
+<view class='commonContentArea'>
+  <text class='contentText'>记录最后更新时间：{{latestUpdateTime}}</text>
+</view>
+<view class='commonContentArea'>
+  <text class='contentText'>版本实际上线时间：{{actualOnlineTime}}</text>
+</view>
+
+<!-- <text class='commonContentTitle'>关联的业务需求:</text> -->

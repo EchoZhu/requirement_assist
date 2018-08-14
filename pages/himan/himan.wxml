@@ -1,0 +1,5 @@
+<!--pages/himan/himan.wxml-->
+<view class='himan_area'>
+  <image class='himan_pic' src='../../images/himan.png' bindtap='tellTheTrue'></image>
+</view>
+<text class='testTXT'>{{resultTxt}}</text>

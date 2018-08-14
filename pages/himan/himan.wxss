@@ -1,0 +1,10 @@
+/* pages/himan/himan.wxss */
+.himan_area{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.himan_pic{
+  height: 100px;
+  width: 100%;
+}

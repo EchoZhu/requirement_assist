@@ -1,0 +1,95 @@
+<!--pages/test/test.wxml-->
+<view class="userinfo">
+  <image class="userinfo-avatar" src="{{userInfo[0].avatarUrl}}" mode="cover"></image>
+  <text class='userinfo-phone'>{{phone}}</text>
+  <view class='requstNumberArea'>
+    <view class='myRequsts'>
+      <text>已上线的需求</text>
+      <text class='myRequestNumber'>{{onlineRequestNumber}}</text>
+    </view>
+    <view class='line'></view>
+    <view class='approvedRequsts'>
+      <text>未上线的需求</text>
+      <text class='approvedRequestNumber'>{{unonlineRequestNumber}}</text>
+    </view>
+  </view>
+
+</view>
+
+<view class='showCardArea'>
+  <!-- 第一行 卡片 -->
+  <view class='cardRow'>
+    <!-- 待分配方案负责人 卡片 -->
+    <view class='unaccepted'>
+      <!-- 卡片上的彩线-蓝色 -->
+      <view style='height: 2px;width: 30px;background-color: #429bc5;margin-left: 5px;margin-top: 5px;'></view>
+      <text class='cardTitle'>待分配方案负责人</text>
+
+      <view class='numberAndPic'>
+        <text style='font-size: 14px;margin-left: 5px;margin-top: 3px'>{{unassignedNumber}}个</text>
+        <image class='cardImage' src="../../images/my_logo1.png"></image>
+      </view>
+    </view>
+    <!-- 待需求预分析 卡片 -->
+    <view class='unassigned'>
+      <!-- 卡片上的彩线-分红色 -->
+      <view style='height: 2px;width: 30px;background-color: #ea74e9;margin-left: 5px;margin-top: 5px;'></view>
+      <text class='cardTitle'>待需求预分析</text>
+      <view class='numberAndPic'>
+        <text style='font-size: 14px;margin-left: 5px;margin-top: 3px'>{{unpreanalysisNumber}}个</text>
+        <image class='cardImage' src="../../images/my_logo2.png"></image>
+      </view>
+    </view>
+  </view>
+
+  <!-- 第二行 卡片 -->
+  <view class='cardRow'>
+    <!-- 待预接收需求 卡片 -->
+    <view class='unaccepted'>
+      <!-- 卡片上的彩线-绿色 -->
+      <view style='height: 2px;width: 30px;background-color: #00c482;margin-left: 5px;margin-top: 5px;'></view>
+      <text class='cardTitle'>待预接收需求</text>
+      <view class='numberAndPic'>
+        <text style='font-size: 14px;margin-left: 5px;margin-top: 3px'>{{unaccepted}}个</text>
+        <image class='cardImage' src="../../images/my_logo3.png"></image>
+      </view>
+    </view>
+    <!-- 待集团批准 卡片 -->
+    <view class='unassigned'>
+      <!-- 卡片上的彩线-橘色 -->
+      <view style='height: 2px;width: 30px;background-color: #e8c053;margin-left: 5px;margin-top: 5px;'></view>
+      <text class='cardTitle'>待集团批准</text>
+      <view class='numberAndPic'>
+        <text style='font-size: 14px;margin-left: 5px;margin-top: 3px'>{{unratifiedNumber}}个</text>
+        <image class='cardImage' src="../../images/my_logo4.png"></image>
+      </view>
+    </view>
+  </view>
+
+  <!-- 第三行 卡片 -->
+  <view class='cardRow'>
+    <!-- 已创建业务需求 卡片 -->
+    <view class='unaccepted'>
+      <!-- 卡片上的彩线-深橘色 -->
+      <view style='height: 2px;width: 30px;background-color: #f7776a;margin-left: 5px;margin-top: 5px;'></view>
+      <text class='cardTitle'>已创建业务需求</text>
+
+      <view class='numberAndPic'>
+        <text style='font-size: 14px;margin-left: 5px;margin-top: 3px'>{{createdRequsts}}个</text>
+        <image class='cardImage' src="../../images/my_logo5.png"></image>
+      </view>
+    </view>
+    <!-- 原始需求取消 卡片 -->
+    <view class='unassigned'>
+      <!-- 卡片上的彩线-greenyellow色 -->
+      <view style='height: 2px;width: 30px;background-color: #96c65f;margin-left: 5px;margin-top: 5px;'></view>
+      <text class='cardTitle'>原始需求取消</text>
+      <view class='numberAndPic'>
+        <text style='font-size: 14px;margin-left: 5px;margin-top: 3px'>{{canceled}}个</text>
+        <image class='cardImage' src="../../images/my_logo6.png"></image>
+      </view>
+    </view>
+  </view>
+</view>
+
+<button class='changeAccount' bindtap='changeAccount'>切换账户</button>

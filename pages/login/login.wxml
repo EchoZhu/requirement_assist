@@ -1,0 +1,29 @@
+<!--pages/login/login.wxml-->
+<view>
+  <image class='titlelogo' src='{{titlelogo}}'></image>
+</view>
+<view class='app_name'>
+  <text class='app_name_txt'>需求小助手</text>
+</view>
+<view class='hi_man'>
+  <image class='hi_man_img' src='{{himanimag}}'></image>
+</view>
+<view class="view_input_username">
+  <image class='usernamepic' src='{{username_pic}}'></image>
+  <input class='input_username' placeholder='请输入手机号' type='number' placeholder-style='color:white' bindinput='getPhoneNumber'/>
+</view>
+<view class='whiteline'></view>
+<view class="view_input_pwd">
+  <image class='pwdpic' src='{{pwd_pic}}'></image>
+  <input class='input_pwd' placeholder='请输入密码' placeholder-style='color:white' bindinput='getPWD' password='true' />
+</view>
+<view class='whiteline'></view>
+<view class='view_forgetpwd'>
+<text class='forgetpwd' bindtap='forgetpwd'>忘记密码？</text>
+</view>
+
+<button class='btn_login' bindtap="login">登录</button>
+
+<view class='view_regist'>
+<text class='regist' bindtap='regist'>注册</text>
+</view>

@@ -1,0 +1,65 @@
+<!--pages/main/main.wxml-->
+
+
+<view class='dataExist' style="display:{{hideTips}}">
+  <text>您的账号下没有需求可供查看</text>
+</view>
+<view class='picker-area' style="display:{{fileterHide}}">
+  <view class='chose-item'>
+    <picker mode="selector" range="{{status}}"  bindchange="bindStatusChange" >
+      <text>按状态筛选</text>
+      <image src='../../images/arrow_down.png'></image>
+    </picker>
+  </view>
+  <view class='chose-item'>
+    <picker mode="date" value="{{date}}" start="2010-09-01" end="{{currentMonth}}" bindchange="bindDateChange" fields='month'>
+      <text>按时间筛选</text>
+      <image src='../../images/arrow_down.png'></image>
+    </picker>
+
+  </view>
+</view>
+
+<view class='line-top'></view>
+<view class="mainList" wx:for="{{listArray}}" wx:key="{{index}}" bindtap='directToRequestDetail' data-index="{{index}}">
+  <!-- item 被点击时 -->
+  <block wx:if="{{index == clickId}}">
+    <view class='requst_container_out' style="color:{{request_container_txt_color}}" style='background-color: {{requst_container_background_color_clicked}}'>
+      <view class='requst_container_in' style="color:{{request_container_txt_color_clicked}} ">
+        <view class='requestTitle'>
+          <image class='img_left_title' src='../../images/star_left_of_title_clicked.png'></image>
+          <text class='txt_requestTitle'>{{item.TITLE}} </text>
+        </view>
+        <view class='requestContent' style="color:{{request_content_txt_color_clicked}} ">
+          <view class='requestPoster'>需求提出人：{{item.EXPRESSOR}}</view>
+          <view class='requestCreateTime'>需求创建时间：{{item.CREATE_TIME}}</view>
+          <view class='statusAndID' style="color:{{statusAndID_txt_color_clicked}} ">
+            <view class='requestStatus'>状态：{{item.STATE}}</view>
+            <view class='requestID'>需求ID:{{item.ORIGIN_REQUIREMENT_ID}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+
+  <!-- item 未被点击时 -->
+  <block wx:if="{{index != clickId}}">
+    <view class='requst_container_out' style="color:{{request_container_txt_color}}" style='background-color: {{requst_container_background_color}}'>
+      <view class='requst_container_in' style="color:{{request_container_txt_color}} ">
+        <view class='requestTitle'>
+          <image class='img_left_title' src='../../images/star_left_of_title.png'></image>
+          <text class='txt_requestTitle'>{{item.TITLE}} </text>
+        </view>
+        <view class='requestContent' style="color:{{request_content_txt_color}} ">
+          <view class='requestPoster'>需求提出人：{{item.EXPRESSOR}}</view>
+          <view class='requestCreateTime'>需求创建时间：{{item.CREATE_TIME}}</view>
+          <view class='statusAndID' style="color:{{statusAndID_txt_color}} ">
+            <view class='requestStatus'>状态：{{item.STATE}}</view>
+            <view class='requestID'>需求ID:{{item.ORIGIN_REQUIREMENT_ID}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+  <view class='line'></view>
+</view>
